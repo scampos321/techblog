@@ -1,10 +1,10 @@
 const router = require('express').Router();
 
-router.get('/login', (res, req) => {
+router.get('/login', (req, res) => {
     res.render('login')
 })
 
-router.get('/register', (res, req) => {
+router.get('/register', (req, res) => {
     res.render('register')
 })
 

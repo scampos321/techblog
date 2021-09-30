@@ -1,6 +1,6 @@
 const router = require('express').Router();
 
-router.get('/', (res, req) => {
+router.get('/:id', (res, req) => {
     res.render('dashboard')
 })
 

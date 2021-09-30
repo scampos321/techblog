@@ -2,10 +2,9 @@ const router = require('express').Router();
 const homeRoutes = require('./view/home');
 const dashboardRoutes = require('./view/dashboard');
 const authRoutes = require('./view/auth');
-const blogRoutes = require('./view/blog')
-app.use('/', homeRoutes);
-app.use('/', authRoutes);
-
-app.use('/dashboard', dashboardRoutes);
-app.use('/blog', blogRoutes);
+const blogRoutes = require('./view/blog');
+router.use('/', homeRoutes);
+router.use('/', authRoutes);
+router.use('/dashboard', dashboardRoutes);
+router.use('/blogs', blogRoutes);
 module.exports = router;
